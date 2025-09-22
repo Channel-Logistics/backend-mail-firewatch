@@ -24,7 +24,7 @@ import { MailController } from './mail.controller';
             pass: config.get('SMTP_PASS'),
           },
         });
-        await transporter.verify(); // valida conexión
+        await transporter.verify(); 
         return transporter;
       },
     },
